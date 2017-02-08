@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Example Site", "Index", "Home", new { area = "" }, new { @class = " rounded-rectangle-15" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("HOW IT WORKS", "Index", "Home")</li>
+                    <li>@Html.ActionLink("IN THE NEWS", "Index", "Home")</li>
+                    <li>@Html.ActionLink("OUR LOCATIONS", "Index", "Home")</li>
+                    <li>@Html.ActionLink("FAQ", "Index", "Home")</li>
+                    <li>@Html.ActionLink("CONTACT US", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="navbar navbar-inverse navbar-fixed-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="navbar-center">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">HOW IT WORKS</a></li>
+                                <li><a href="#">IN THE NEWS</a></li>
+                                <li><a href="#">OUR LOCATIONS</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="navbar-center">
+                            <ul class="nav navbar-nav">
+                                <li><a>&copy; Example Site 2016</a></li>
+                                <li><a>Privacy Statement</a></li>
+                                <li><a>Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
