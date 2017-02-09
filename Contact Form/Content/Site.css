@@ -18,12 +18,28 @@
 
 .btn-submit-stretch {
     display: block;
-    width: 100%
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(0, 129, 177);
 }
+
+.btn-submit-text {
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.997;
+    text-align: center;
+    -moz-transform: matrix( 0.99994210176704,0,0,0.99843281120907,0,0);
+    -webkit-transform: matrix( 0.99994210176704,0,0,0.99843281120907,0,0);
+    -ms-transform: matrix( 0.99994210176704,0,0,0.99843281120907,0,0);
+    z-index: 21;
+}
+
 
 .form-horizontal-center {
     margin: auto;
-    width: 40%;
+    width: 764.125px;
 }
 
 h2 {
@@ -31,7 +47,7 @@ h2 {
 }
 
 .navbar-center {
-  text-align:center;
+    text-align:center;
 }
 
 .navbar-nav {
@@ -39,7 +55,95 @@ h2 {
     float:none;
 }
 
-.rounded-rectangle-15 {
-  border-radius: 10px;
-  background-color: rgb(0, 129, 177);
+.form-text {
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(86, 91, 94);
+    line-height: 1.625;
+    text-align: center;
+    width: 764.125px;
+    height: 41px;
+    z-index: 45;
 }
+
+
+.required-asterisk {
+    background-image: url("../Images/asterisk.png");
+    background-position: calc(100% - 20px);
+    background-position-y: 12px;
+    background-repeat: no-repeat;
+}
+
+.Example_Site {
+    font-size: 35px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.742;
+    position: absolute;
+    left: 410px;
+    top: 156.465px;
+    z-index: 64;
+}
+
+.rounded-rectangle-15 {
+    border-radius: 10px;
+    background-color: rgb(0, 129, 177);
+    padding: 15px 15px 15px 15px;
+    font-size: 35px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.742;
+}
+
+.rounded-rectangle-11 {
+    border-radius: 11px;
+    background-color: rgb(0, 129, 177);
+    width: 160px;
+    height: 40px;
+    z-index: 56;
+}
+
+.phone-number {
+    display: inline-block;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 2.167;
+    text-align: center;
+    z-index: 58;
+}
+
+.phone-icon {
+    background-image: url("../Images/phone.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px; 
+
+    z-index: 57;
+}
+
+.facebook {
+    background-image: url("../Images/facebook.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    z-index: 60;
+}
+
+.hero-unit {
+    background-image: url("../Images/hero.png");
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 378px;
+    
+}
+
+
+
+

@@ -219,6 +219,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\asterisk.png" />
+    <Content Include="Images\facebook-inverted.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\phone.png" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
