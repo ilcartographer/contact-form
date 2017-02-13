@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top navbar-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div class="rounded-rectangle-15">Example Site</div>
+                <div class="rounded-rectangle-15 example-site-text">Example Site</div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -27,42 +27,42 @@
                     <li>@Html.ActionLink("FAQ", "Index", "Home")</li>
                     <li>@Html.ActionLink("CONTACT US", "Contact", "Home")</li>
                     <li><span class="facebook"></span></li>
-                    <li><div class="phone-number rounded-rectangle-11"><span class="phone-icon">555 - 555 - 5555</span></div></li>
+                    <li><div class="rounded-rectangle-11 phone-number"><i class="phone-icon"></i>555 - 555 - 5555</div></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="hero-unit"></div>
+    <div class="hero-unit row"></div>
     <div class="container body-content">
         @RenderBody()
-        <footer>
-            <div class="navbar navbar-inverse navbar-fixed-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="navbar-center">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#">ABOUT US</a></li>
-                                <li><a href="#">HOW IT WORKS</a></li>
-                                <li><a href="#">IN THE NEWS</a></li>
-                                <li><a href="#">OUR LOCATIONS</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">CONTACT US</a></li>
-                            </ul>
-                        </div>
+    </div>
+    <footer>
+        <div class="navbar navbar-inverse navbar-fixed-bottom navbar-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-center navbar-footer-top">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">HOW IT WORKS</a></li>
+                            <li><a href="#">IN THE NEWS</a></li>
+                            <li><a href="#">OUR LOCATIONS</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <div class="navbar-center">
-                            <ul class="nav navbar-nav">
-                                <li><a>&copy; Example Site 2016</a></li>
-                                <li><a>Privacy Statement</a></li>
-                                <li><a>Terms of Use</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="navbar-center navbar-footer-bottom">
+                        <ul class="nav navbar-nav">
+                            <li><a>&copy; Example Site 2016</a></li>
+                            <li><a>Privacy Statement</a></li>
+                            <li><a>Terms of Use</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

@@ -16,10 +16,15 @@
     white-space: normal;
 }
 
+.navbar-top {
+    padding-top: 45px;
+    padding-bottom: 17px;
+}
+
 .btn-submit-stretch {
     display: block;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: rgb(0, 129, 177);
 }
 
@@ -74,54 +79,47 @@ h2 {
     background-repeat: no-repeat;
 }
 
-.Example_Site {
+.example-site-text {
     font-size: 35px;
     font-family: "Arial";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 0.742;
-    position: absolute;
-    left: 410px;
-    top: 156.465px;
-    z-index: 64;
 }
 
 .rounded-rectangle-15 {
     border-radius: 10px;
     background-color: rgb(0, 129, 177);
     padding: 15px 15px 15px 15px;
-    font-size: 35px;
-    font-family: "Arial";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 0.742;
+    
 }
 
 .rounded-rectangle-11 {
-    border-radius: 11px;
+    border-radius: 20px;
     background-color: rgb(0, 129, 177);
     width: 160px;
     height: 40px;
-    z-index: 56;
+    display: table;
+    text-align: center;
 }
 
 .phone-number {
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
     font-size: 12px;
     font-family: "Arial";
     color: rgb(255, 255, 255);
-    line-height: 2.167;
-    text-align: center;
-    z-index: 58;
 }
 
 .phone-icon {
     background-image: url("../Images/phone.png");
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 30px; 
-
-    z-index: 57;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .facebook {
@@ -135,15 +133,106 @@ h2 {
     z-index: 60;
 }
 
+.facebook-inverted {
+    background-image: url("../Images/facebook-inverted.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    z-index: 60;
+}
+
 .hero-unit {
     background-image: url("../Images/hero.png");
     background-position: center -100px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 378px;
-    
+    margin-top: 62px;
 }
 
+.body-content {
+    padding-bottom: 650px;
+}
 
+.navbar-footer {
+    padding-top: 37px;
+    padding-bottom: 10px;
+}
 
+.navbar-footer-top {
+  font-size: 13px;
+  font-family: "Arial";
+  color: rgb(239, 239, 239);
+  line-height: 2;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.navbar-footer-bottom {
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(239, 239, 239);
+  line-height: 2.167;
+}
+
+.location-info-box-inner > .call-information {
+  font-size: 16px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.75;
+  text-align: center;
+}
+.location-info-box-inner > h4 {
+  font-size: 24px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.167;
+  text-align: center;
+}
+.location-info-box-inner > address {
+  font-size: 20px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  text-align: center;
+  white-space: pre;
+}
+.location-info-box-inner > h3 {
+  font-size: 32px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  line-height: 0.875;
+  text-align: center;
+}
+
+.location-row {
+    height: 540px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.location-info-box {
+  background-color: rgb(0, 129, 177);
+  height: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.location-info-box-inner {
+    margin-left: 45%;
+    padding-top: 86px;
+    padding-bottom: 43px;
+}
+
+.location-map-box {
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+.location-map {
+    height: 100%;
+    width: 100%;
+}
 

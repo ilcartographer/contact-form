@@ -8,7 +8,7 @@
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal form-horizontal-center">
+    <div class="form-horizontal form-horizontal-center row">
         <h2>Get in Touch</h2>
         @if(ViewBag.SubmitMessage != null)
        { 
@@ -17,43 +17,64 @@
             <p class="form-text">If you have any questions or comments, we'd love to hear from you.  Just fill out the form below and we'll get back to you soon.  Rest assured that any information you provide will remain confidential.</p>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            <div class="col-md-10">
+            <div>
                 @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control required-asterisk", placeholder = Html.DisplayNameFor(m => m.FirstName) } })
                 @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            <div class="col-md-10">
+            <div>
                 @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control required-asterisk", placeholder = Html.DisplayNameFor(m => m.Email) } })
                 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            <div class="col-md-10">
+            <div>
                 @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control required-asterisk", placeholder = Html.DisplayNameFor(m => m.Subject) } })
                 @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            <div class="col-md-10">
+            <div>
                 @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control required-asterisk", placeholder = Html.DisplayNameFor(m => m.Message) } })
                 @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            <div class="col-md-10">
+            <div>
                 <input type="submit" value="SUBMIT" class="btn btn-default btn-submit-stretch btn-primary btn-submit-text" />
             </div>
         </div>
     </div>
 }
 
-<div>
-    Our location, map, etc.
+<div class="row location-row">
+    <div class="col-md-6 location-info-box">
+        <div class="location-info-box-inner">
+            <h3>Our Location</h3>
+            <address>Example Site
+2500 Technology Dr
+Louisville, KY 40299
+www.examplesite.com
+            </address>
+            <h4>Call Us</h4>
+            <div class="call-information">
+                <p>Louisville: 555-555-5555<br />
+San Antonio: 555-555-5555<br />
+Toll Free: 555-555-5555<br />            
+                </p>
+                <span class="facebook-inverted"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 location-map-box">
+        <img src="~/Images/map.png" class="location-map" />
+    </div>
+
 </div>
 
 @section Scripts {
