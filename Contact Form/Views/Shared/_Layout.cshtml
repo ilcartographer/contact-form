@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top navbar-top">
+    <div class="navbar navbar-default navbar-fixed-top navbar-top navbar-main">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -20,20 +20,21 @@
                 <div class="rounded-rectangle-15 example-site-text">Example Site</div>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("HOW IT WORKS", "Index", "Home")</li>
-                    <li>@Html.ActionLink("IN THE NEWS", "Index", "Home")</li>
-                    <li>@Html.ActionLink("OUR LOCATIONS", "Index", "Home")</li>
+                <ul class="nav navbar-nav navbar-main-list">
+                    <li>@Html.ActionLink("How It Works", "Index", "Home")</li>
+                    <li>@Html.ActionLink("In the News", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Our Locations", "Index", "Home")</li>
                     <li>@Html.ActionLink("FAQ", "Index", "Home")</li>
-                    <li>@Html.ActionLink("CONTACT US", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                     <li><span class="facebook"></span></li>
                     <li><div class="rounded-rectangle-11 phone-number"><i class="phone-icon"></i>555 - 555 - 5555</div></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="hero-unit row"></div>
+    <div class="hero-unit"></div>
     <div class="container body-content">
+        
         @RenderBody()
     </div>
     <footer>
@@ -41,13 +42,13 @@
             <div class="container">
                 <div class="row">
                     <div class="navbar-center navbar-footer-top">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">HOW IT WORKS</a></li>
-                            <li><a href="#">IN THE NEWS</a></li>
-                            <li><a href="#">OUR LOCATIONS</a></li>
+                        <ul class="nav navbar-nav navbar-caps">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">In the News</a></li>
+                            <li><a href="#">Our Locations</a></li>
                             <li><a href="#">FAQ</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

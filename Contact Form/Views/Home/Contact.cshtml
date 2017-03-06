@@ -8,38 +8,38 @@
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal form-horizontal-center row">
+    <div class="form-horizontal form-horizontal-center contact-form">
         <h2>Get in Touch</h2>
         @if(ViewBag.SubmitMessage != null)
        { 
             <div class="alert @(ViewBag.Success ? "alert-info" : "alert-error")">@ViewBag.SubmitMessage</div>
         }
-            <p class="form-text">If you have any questions or comments, we'd love to hear from you.  Just fill out the form below and we'll get back to you soon.  Rest assured that any information you provide will remain confidential.</p>
+            <div class="form-text"><p>If you have any questions or comments, we'd love to hear from you.  Just fill out the form below and<br /> we'll get back to you soon.  Rest assured that any information you provide will remain confidential.</p></div>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             <div>
-                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control required-asterisk", placeholder = Html.DisplayNameFor(m => m.FirstName) } })
+                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control required-asterisk form-input", placeholder = Html.DisplayNameFor(m => m.FirstName) } })
                 @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             <div>
-                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control required-asterisk", placeholder = Html.DisplayNameFor(m => m.Email) } })
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control required-asterisk form-input", placeholder = Html.DisplayNameFor(m => m.Email) } })
                 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             <div>
-                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control required-asterisk", placeholder = Html.DisplayNameFor(m => m.Subject) } })
+                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control required-asterisk form-input ", placeholder = Html.DisplayNameFor(m => m.Subject) } })
                 @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             <div>
-                @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control required-asterisk", placeholder = Html.DisplayNameFor(m => m.Message) } })
+                @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control required-asterisk form-input", placeholder = Html.DisplayNameFor(m => m.Message) } })
                 @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -52,7 +52,7 @@
     </div>
 }
 
-<div class="row location-row">
+<div class="location-row">
     <div class="col-md-6 location-info-box">
         <div class="location-info-box-inner">
             <h3>Our Location</h3>

@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -47,8 +48,7 @@ namespace Contact_Form.Controllers
                 message.Append("Name: " + model.FirstName + "\n");
                 message.Append("Message: " + model.Message);
 
-                var emailThread = new Thread(() => SendEmail(toAddress, fromAddress, subject, message.ToString()));
-                emailThread.Start();
+                Parallel.Invoke(() => SendEmail(toAddress, fromAddress, subject, message.ToString()));
             }
             else
             {

@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #efefef;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -16,9 +17,13 @@
     white-space: normal;
 }
 
+.contact-form {
+    padding-top: 108px;
+    padding-bottom: 190px;
+}
+
 .navbar-top {
     padding-top: 45px;
-    padding-bottom: 17px;
 }
 
 .btn-submit-stretch {
@@ -44,11 +49,13 @@
 
 .form-horizontal-center {
     margin: auto;
-    width: 764.125px;
+    width: 734.125px;
 }
 
 h2 {
     text-align: center;
+    font-family: "Calibri";
+    font-size: 36px;
 }
 
 .navbar-center {
@@ -61,36 +68,78 @@ h2 {
 }
 
 .form-text {
-    font-size: 16px;
-    font-family: "Arial";
+    font-size: 14px;
+    font-family: "Calibri";
     color: rgb(86, 91, 94);
-    line-height: 1.625;
     text-align: center;
-    width: 764.125px;
-    height: 41px;
     z-index: 45;
+    margin-top: 30px;
+    margin-bottom: 85px;
+
 }
 
+textarea.form-input {
+    height: 400px;
+    resize: none;
+}
+
+.form-input {
+    background-color: #efefef;
+    height: 60px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.form-input::-webkit-input-placeholder {
+    font-family: "Calibri";
+    color: #5a5b5d;
+    padding-left:15px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.form-input:-ms-input-placeholder {
+    font-family: "Calibri";
+    color: #5a5b5d;
+    padding-left:15px;
+    padding-top: 10px;
+}
+
+.form-input:-moz-placeholder {
+    font-family: "Calibri";
+    color: #5a5b5d;
+    padding-left:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-input::-moz-placeholder {
+    font-family: "Calibri";
+    color: #5a5b5d;
+    padding-left:15px;
+}
 
 .required-asterisk {
     background-image: url("../Images/asterisk.png");
-    background-position: calc(100% - 20px);
-    background-position-y: 12px;
+    background-position: calc(100% - 30px);
+    background-position-y: 25px;
     background-repeat: no-repeat;
+    vertical-align: middle;
+
 }
 
 .example-site-text {
-    font-size: 35px;
+    font-size: 24px;
     font-family: "Arial";
     color: rgb(255, 255, 255);
-    font-weight: bold;
     line-height: 0.742;
 }
 
 .rounded-rectangle-15 {
     border-radius: 10px;
     background-color: rgb(0, 129, 177);
-    padding: 15px 15px 15px 15px;
+    padding: 12px 15px 12px 15px;
     
 }
 
@@ -107,7 +156,7 @@ h2 {
     display: table-cell;
     vertical-align: middle;
     font-size: 12px;
-    font-family: "Arial";
+    font-family: "Calibri";
     color: rgb(255, 255, 255);
 }
 
@@ -127,14 +176,14 @@ h2 {
     background-position: left center;
     background-repeat: no-repeat;
     display: inline-block;
-    margin-right: 16px;
+    margin-right: 3px;
     width: 40px;
     height: 40px;
     z-index: 60;
 }
 
 .facebook-inverted {
-    background-image: url("../Images/facebook-inverted.png");
+    background-image: url("../Images/facebook.png");
     background-position: left center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -148,8 +197,10 @@ h2 {
     background-position: center -100px;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 378px;
-    margin-top: 62px;
+    height: 400px;
+    margin-top: 60px;
+    left: 0px;
+    right: 0px;
 }
 
 .body-content {
@@ -162,38 +213,57 @@ h2 {
 }
 
 .navbar-footer-top {
-  font-size: 13px;
-  font-family: "Arial";
+  font-size: 10px;
+  font-family: "Calibri";
   color: rgb(239, 239, 239);
   line-height: 2;
   text-align: center;
   margin-bottom: -20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .navbar-footer-bottom {
-  font-size: 12px;
-  font-family: "Arial";
+  font-size: 10px;
+  font-family: "Calibri";
   color: rgb(239, 239, 239);
   line-height: 2.167;
+  font-weight: bold;
+}
+
+.navbar-main {
+    padding-left:150px;
+}
+
+.navbar-main-list {
+    padding-left: 80px;
+}
+
+.navbar-main-list > li {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .location-info-box-inner > .call-information {
   font-size: 16px;
-  font-family: "Arial";
+  font-family: "Calibri";
   color: rgb(255, 255, 255);
   line-height: 1.75;
   text-align: center;
 }
 .location-info-box-inner > h4 {
   font-size: 24px;
-  font-family: "Arial";
+  font-family: "Calibri";
   color: rgb(255, 255, 255);
   line-height: 1.167;
   text-align: center;
 }
 .location-info-box-inner > address {
   font-size: 20px;
-  font-family: "Arial";
+  font-family: "Calibri";
   color: rgb(255, 255, 255);
   line-height: 1.6;
   text-align: center;
@@ -201,7 +271,7 @@ h2 {
 }
 .location-info-box-inner > h3 {
   font-size: 32px;
-  font-family: "Arial";
+  font-family: "Calibri";
   color: rgb(255, 255, 255);
   line-height: 0.875;
   text-align: center;
